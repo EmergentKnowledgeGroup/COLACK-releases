@@ -1,5 +1,8 @@
 # Preview candidate notes — 2026-10-25
 
+> **Windows runtime ZIP packaging correction:** The initial U20 ZIP (SHA-256 `e4e513760f14ace19ed7990df333364f25da22c7cf9d792aa45787df5bdd0049`) is withdrawn under a `WITHDRAWN-` asset name because four empty directories required by its signed inventory were missing. The separately named `COLACK-windows-x64-runtime-preview-U20-20261025-r1.zip` adds exactly those four directory entries. All 3,607 files, signed manifests, signatures, binaries, publisher key and normal21 migrations are unchanged. Fresh Windows extraction and the unchanged strict verifier passed. Use the r1 archive and `SHA256SUMS-r1.txt`; old published bytes and the initial checksum list are retained, not replaced.
+
+
 **Public preview candidate; public retrieval/install attestation in progress. No general-release or full-platform PASS claim.**
 
 - Self-hosted chat with tagged native-agent collaboration, durable queued jobs, current permission checks and native approval controls.

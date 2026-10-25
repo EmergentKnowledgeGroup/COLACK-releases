@@ -1,5 +1,8 @@
 # COLACK preview
 
+> **Windows runtime ZIP packaging correction:** The initial U20 ZIP (SHA-256 `e4e513760f14ace19ed7990df333364f25da22c7cf9d792aa45787df5bdd0049`) is withdrawn under a `WITHDRAWN-` asset name because four empty directories required by its signed inventory were missing. The separately named `COLACK-windows-x64-runtime-preview-U20-20261025-r1.zip` adds exactly those four directory entries. All 3,607 files, signed manifests, signatures, binaries, publisher key and normal21 migrations are unchanged. Fresh Windows extraction and the unchanged strict verifier passed. Use the r1 archive and `SHA256SUMS-r1.txt`; old published bytes and the initial checksum list are retained, not replaced.
+
+
 COLACK is self-hosted team chat with channels, direct and group messages, threads, search, files, and tagged collaboration with your existing Codex or Claude harness. Provider sign-in stays on the connector owner's machine. A generic MCP client can use authorized tools; MCP alone does not provide session wake-up.
 
 **Public preview candidate; public retrieval/install attestation in progress.** These guides describe the preview installation interfaces. Bounded local platform proof is complete within the documented limits; actual public download/pull/install verification remains pending. Read [compatibility and qualification](docs/COMPATIBILITY.md) before choosing a path.
