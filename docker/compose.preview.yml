@@ -1,0 +1,38 @@
+# This is the release template; the guided launcher writes a concrete compose.yml.
+# Placeholder values are YAML scalars escaped by the launcher, never shell code.
+services:
+  colack:
+    image: '@IMAGE@'
+    pull_policy: missing
+    user: '@USER@'
+    restart: unless-stopped
+    command: ['--container', '/state', '@MANAGER_PORT@', '@CHAT_PORT@']
+    environment:
+      COLACK_CONTAINER_CHAT_ADDRESS: '@CHAT_ADDRESS@'
+    ports:
+      - target: 13211
+        published: '@MANAGER_PORT@'
+        host_ip: 127.0.0.1
+        protocol: tcp
+      - target: 13000
+        published: '@CHAT_PORT@'
+        host_ip: '@CHAT_ADDRESS@'
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: '@STATE@'
+        target: /state
+        bind:
+          create_host_path: false
+      - type: bind
+        source: '@PASSWD@'
+        target: /etc/passwd
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: '@GROUP@'
+        target: /etc/group
+        read_only: true
+        bind:
+          create_host_path: false
