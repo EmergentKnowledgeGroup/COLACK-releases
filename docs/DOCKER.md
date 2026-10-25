@@ -1,8 +1,8 @@
 # Guided Docker hosting
 
-This path uses a prebuilt Linux runtime. Intended targets are Ubuntu 24.04/26.04 LTS x64 with Docker Engine and Compose v2, or Windows 10/11 x64 with Docker Desktop in Linux-container mode. Full platform qualification remains pending; see [compatibility](COMPATIBILITY.md).
+This path uses a prebuilt Linux runtime. Intended targets are Ubuntu 24.04/26.04 LTS x64 with Docker Engine and Compose v2, or Windows 10/11 x64 with Docker Desktop in Linux-container mode. For the qualified preview targets and exact observed limits, see [compatibility](COMPATIBILITY.md).
 
-Download the three matching helper files and image selector together: [install-preview.sh](../docker/install-preview.sh), [install-preview.ps1](../docker/install-preview.ps1), [compose.preview.yml](../docker/compose.preview.yml) and [preview-image.txt](../docker/preview-image.txt). Keep all four in the same folder. The three helpers are unchanged; the selector pins the matching immutable registry image. Public retrieval/install attestation remains in progress. See [downloads and checksums](DOWNLOADS.md).
+Download the three matching helper files and image selector together: [install-preview.sh](../docker/install-preview.sh), [install-preview.ps1](../docker/install-preview.ps1), [compose.preview.yml](../docker/compose.preview.yml) and [preview-image.txt](../docker/preview-image.txt). Keep all four in the same folder. The three helpers are unchanged; the selector pins the matching immutable registry image. Public artifact verification now passes within the documented scope. See [downloads and checksums](DOWNLOADS.md).
 
 Start Docker first. From the downloaded launcher folder, use the command for your host. The adjacent selector supplies the release image:
 

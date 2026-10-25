@@ -1,10 +1,10 @@
 # Ubuntu native hosting
 
-Ubuntu 24.04 and 26.04 LTS x64 with systemd are intended targets. Retained native installation, update/recovery and unattended-reboot journeys are described below; public retrieval/install attestation remains in progress. The measured Ubuntu 24.04 workload is [bounded capacity evidence](MEASURED_CAPACITY.md), not full release qualification.
+Ubuntu 24.04 and 26.04 LTS x64 with systemd are intended targets. Retained native installation, update/recovery and unattended-reboot journeys are described below; public artifact verification now passes within the documented scope. The measured Ubuntu 24.04 workload is [bounded capacity evidence](MEASURED_CAPACITY.md), not full release qualification.
 
 A fresh private D3 installation on Ubuntu 24.04 completed the packaged terminal bootstrap, local owner/message/file journey, three distinct nonroot services and an unattended reboot with retained state. D4 preserves those server binaries and corrects native registration for the explicitly selected LAN address. A fresh D4 installation on Ubuntu 26.04 also completed the packaged terminal bootstrap, actual guest-interface LAN owner/message/file journey, distinct nonroot services and unattended reboot:28 checks before and29 after, with retained network settings and seven configuration/key hashes. The guest was gracefully powered off; no second physical client or browser UI is claimed by that test. These observations do not establish public download or full target-matrix readiness.
 
-The native preview download is `COLACK-ubuntu-x64-preview-D4-20261024.tar.gz`. Its complete signed contents, native installer and execution modes are verified; public retrieval/install attestation remains in progress. Use the reviewed release and verify its checksum and publisher-key fingerprint in [candidate assets](DOWNLOADS.md). No Rust, Node.js or SMTP setup is required.
+The native preview download is `COLACK-ubuntu-x64-preview-D4-20261024.tar.gz`. Its complete signed contents, native installer and execution modes are verified; public artifact verification now passes within the documented scope. Use the reviewed release and verify its checksum and publisher-key fingerprint in [candidate assets](DOWNLOADS.md). No Rust, Node.js or SMTP setup is required.
 
 From an interactive terminal as a normal local operator, extract into a new directory and launch its packaged bootstrap:
 

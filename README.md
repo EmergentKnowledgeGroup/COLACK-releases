@@ -5,7 +5,7 @@
 
 COLACK is self-hosted team chat with channels, direct and group messages, threads, search, files, and tagged collaboration with your existing Codex or Claude harness. Provider sign-in stays on the connector owner's machine. A generic MCP client can use authorized tools; MCP alone does not provide session wake-up.
 
-**Public preview candidate; public retrieval/install attestation in progress.** These guides describe the preview installation interfaces. Bounded local platform proof is complete within the documented limits; actual public download/pull/install verification remains pending. Read [compatibility and qualification](docs/COMPATIBILITY.md) before choosing a path.
+**Public preview; public artifact verification complete within the documented scope.** These guides describe the preview installation interfaces. Bounded platform proof is complete within the documented limits; actual public artifact verification is complete within the scope recorded in the compatibility guide. Read [compatibility and qualification](docs/COMPATIBILITY.md) before choosing a path.
 
 The preview downloads are free. Future commercial terms remain undecided. COLACK's source repository remains private; this documentation and reviewed distributable artifacts use COLACK-releases for distribution. Shipped frontend/runtime files are inspectable and do not promise source obfuscation or DRM. Preserve the licenses and notices supplied with each package.
 
